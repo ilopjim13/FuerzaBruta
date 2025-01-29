@@ -7,10 +7,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <None Update="password.txt">
-        <DependentUpon>Program.cs</DependentUpon>
-      </None>
-    </ItemGroup>
-
 </Project>

@@ -1,23 +1,34 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 
 namespace FuerzaBruta
 {
-    class Class1
+    class FuerzaBruta
     {
+        static string[] _words = [];
+        static bool _found = false;
         [STAThread]
         static void Main(string[] args)
         {
+            
             try
             {
-                // Open the text file using a stream reader.
-                using StreamReader reader = new("C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\password.txt");
+                using StreamReader reader = new("password.txt");
 
-                // Read the stream as a string.
-                string text = reader.ReadToEnd();
+                string diccionario = reader.ReadToEnd();
+                
+                _words = diccionario.Split('\n');
 
-                // Write the text to the console.
-                Console.WriteLine(text);
+                string password = GetPasswordRandom();
+                
+                Thread thread = new Thread(() => GetPassword(password));
+                
+                thread.Start();
+                
+                thread.Join();
+
+                Console.WriteLine($"Palabra aleatoria: {password}");
             }
             catch (IOException e)
             {
@@ -28,6 +39,34 @@ namespace FuerzaBruta
             {
                 Console.WriteLine("Executing finally block.");
             }
+        }
+
+        static void GetPassword(string password)
+        {
+            try
+            {
+                using StreamReader reader = new("password.txt");
+                foreach (var word in _words)
+                {
+                    if (word == password)
+                    {
+                        _found = true;
+                        Console.WriteLine($"Password found: {word}");
+                        break;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+        static string GetPasswordRandom()
+        {
+            Random rnd = new();
+            return _words[rnd.Next(_words.Length)];
         }
     }
 }

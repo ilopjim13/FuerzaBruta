@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj": {}
+    "C:\\Users\\ivan\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj": {
+    "C:\\Users\\ivan\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj",
+        "projectUniqueName": "C:\\Users\\ivan\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj",
         "projectName": "FuerzaBruta",
-        "projectPath": "C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj",
-        "packagesPath": "C:\\Users\\UsuarioT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UsuarioT\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\obj\\",
+        "projectPath": "C:\\Users\\ivan\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\FuerzaBruta.csproj",
+        "packagesPath": "C:\\Users\\ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivan\\RiderProjects\\FuerzaBruta\\FuerzaBruta\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\UsuarioT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
